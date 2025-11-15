@@ -155,7 +155,7 @@ const WhyChooseUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center p-6 rounded-lg bg-secondary/50">
                 <div className="text-5xl font-display font-bold text-primary mb-2">
-                  500+
+                  65+
                 </div>
                 <div className="text-muted-foreground font-medium">Successful Projects</div>
               </div>
@@ -173,7 +173,7 @@ const WhyChooseUs = () => {
               </div>
               <div className="text-center p-6 rounded-lg bg-secondary/50">
                 <div className="text-5xl font-display font-bold text-primary mb-2">
-                  50+
+                  30+
                 </div>
                 <div className="text-muted-foreground font-medium">Expert Team Members</div>
               </div>
