@@ -133,13 +133,13 @@ const Contact = () => {
                         <label htmlFor="name" className="block text-sm font-medium mb-2">
                           Full Name *
                         </label>
-                        <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="John Doe" className="h-12" />
+                        <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Rahul Sharma" className="h-12" />
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium mb-2">
                           Email Address *
                         </label>
-                        <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="john@example.com" className="h-12" />
+                        <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="rahul@example.com" className="h-12" />
                       </div>
                     </div>
 
