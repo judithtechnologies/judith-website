@@ -98,10 +98,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-display font-semibold text-lg mb-1">Visit Us</h3>
                       <p className="text-muted-foreground">
-                        502, Everest Block,
-Ameerpet, Hyderabad, Telangana, India<br />
-                        Innovation City, IC 12345<br />
-                        United States
+                        502, Everest Block, Ameerpet, Hyderabad, Telangana, IND 500016
                       </p>
                     </div>
                   </div>
