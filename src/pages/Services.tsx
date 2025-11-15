@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Code, Smartphone, Home, Gamepad2, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
+import { Code, Smartphone, Home, Users, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -37,31 +37,31 @@ const Services = () => {
     },
     {
       icon: Home,
-      title: "Home Automation",
-      description: "Transform your living space with intelligent automation solutions.",
+      title: "IoT Applications",
+      description: "Build connected IoT solutions that bridge the physical and digital worlds.",
       features: [
-        "Smart Home Integration",
-        "IoT Device Setup",
-        "Voice Control Systems",
-        "Security & Surveillance",
-        "Energy Management",
-        "Custom Automation Scenarios",
+        "IoT Device Integration",
+        "Sensor Data Analytics",
+        "Real-time Monitoring Systems",
+        "Cloud IoT Platforms",
+        "Edge Computing Solutions",
+        "Industrial IoT Solutions",
       ],
-      technologies: ["HomeKit", "Alexa", "Google Home", "Zigbee", "Z-Wave", "MQTT"],
+      technologies: ["MQTT", "AWS IoT", "Azure IoT", "Arduino", "Raspberry Pi", "LoRaWAN"],
     },
     {
-      icon: Gamepad2,
-      title: "Game Design & Development",
-      description: "Craft immersive gaming experiences across multiple platforms.",
+      icon: Users,
+      title: "Recruitment",
+      description: "Find and hire top talent with our comprehensive recruitment solutions.",
       features: [
-        "2D & 3D Game Development",
-        "Mobile Game Creation",
-        "PC & Console Games",
-        "Game Art & Animation",
-        "Multiplayer Integration",
-        "Monetization Strategies",
+        "Technical Talent Sourcing",
+        "Candidate Screening & Assessment",
+        "Interview Coordination",
+        "Employer Branding",
+        "Recruitment Process Optimization",
+        "Talent Pool Management",
       ],
-      technologies: ["Unity", "Unreal Engine", "Godot", "Blender", "Photon", "PlayFab"],
+      technologies: ["LinkedIn", "Indeed", "Greenhouse", "Workday", "ATS Systems", "HireVue"],
     },
     {
       icon: TrendingUp,
