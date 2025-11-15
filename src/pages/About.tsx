@@ -119,29 +119,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Our Team</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
-              Behind every successful project is a team of dedicated professionals who bring expertise, creativity, and passion to their work. Our multidisciplinary team includes:
-            </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              <div className="p-6 rounded-lg bg-background shadow-soft">
-                <div className="text-4xl font-display font-bold gradient-primary bg-clip-text text-transparent mb-2">15+</div>
-                <div className="text-sm text-muted-foreground font-medium">Developers</div>
-              </div>
-              <div className="p-6 rounded-lg bg-background shadow-soft">
-                <div className="text-4xl font-display font-bold gradient-primary bg-clip-text text-transparent mb-2">10+</div>
-                <div className="text-sm text-muted-foreground font-medium">Designers</div>
-              </div>
-              <div className="p-6 rounded-lg bg-background shadow-soft">
-                <div className="text-4xl font-display font-bold gradient-primary bg-clip-text text-transparent mb-2">8+</div>
-                <div className="text-sm text-muted-foreground font-medium">Strategists</div>
-              </div>
-              <div className="p-6 rounded-lg bg-background shadow-soft">
-                <div className="text-4xl font-display font-bold gradient-primary bg-clip-text text-transparent mb-2">20+</div>
-                <div className="text-sm text-muted-foreground font-medium">Specialists</div>
-              </div>
-            </div>
-
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Each team member brings unique skills and perspectives, enabling us to tackle complex challenges and deliver comprehensive solutions. Together, we form a cohesive unit committed to excellence and client success.
             </p>
