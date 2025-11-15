@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Code, Smartphone, Home, Gamepad2, TrendingUp, CheckCircle, Zap, Shield, Users } from "lucide-react";
+import { ArrowRight, Code, Smartphone, Home, Users, TrendingUp, CheckCircle, Zap, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-background.jpg";
 
 const Index = () => {
@@ -20,13 +20,13 @@ const Index = () => {
     },
     {
       icon: Home,
-      title: "Home Automation",
-      description: "Smart home solutions that bring convenience and efficiency to your lifestyle.",
+      title: "IoT Applications",
+      description: "Connected IoT solutions that bridge the physical and digital worlds.",
     },
     {
-      icon: Gamepad2,
-      title: "Game Design & Development",
-      description: "Immersive gaming experiences across multiple platforms.",
+      icon: Users,
+      title: "Recruitment",
+      description: "Find and hire top talent with comprehensive recruitment solutions.",
     },
     {
       icon: TrendingUp,
