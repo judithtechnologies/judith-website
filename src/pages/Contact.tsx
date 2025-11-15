@@ -218,17 +218,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-display font-bold mb-8 text-center">Find Us On The Map</h2>
-            <div className="rounded-lg overflow-hidden shadow-medium h-96 bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">Map integration placeholder - Coordinates: 40.7128° N, 74.0060° W</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
