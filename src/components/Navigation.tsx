@@ -11,7 +11,7 @@ const Navigation = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "ABOUT" },
     { to: "/services", label: "Services" },
-    { to: "/why-choose-us", label: "Why Choose Us" },
+    { to: "/why-choose-us", label: "Why Us" },
     { to: "/contact", label: "Contact" },
   ];
 
