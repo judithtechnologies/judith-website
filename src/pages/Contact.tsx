@@ -7,32 +7,38 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     subject: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      description: "Thank you for contacting us. We'll get back to you within 24 hours."
     });
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: ""
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -61,8 +67,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold text-lg mb-1">Email Us</h3>
-                      <p className="text-muted-foreground">info@judithtechnologies.com</p>
-                      <p className="text-muted-foreground">support@judithtechnologies.com</p>
+                      <p className="text-muted-foreground">info@judithtech.com</p>
+                      
                     </div>
                   </div>
                 </CardContent>
@@ -76,8 +82,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold text-lg mb-1">Call Us</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                      <p className="text-muted-foreground">+1 (555) 987-6543</p>
+                      <p className="text-muted-foreground">+91 6300369782</p>
+                      
                     </div>
                   </div>
                 </CardContent>
@@ -92,7 +98,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-display font-semibold text-lg mb-1">Visit Us</h3>
                       <p className="text-muted-foreground">
-                        123 Tech Street<br />
+                        502, Everest Block,
+Ameerpet, Hyderabad, Telangana, India<br />
                         Innovation City, IC 12345<br />
                         United States
                       </p>
@@ -133,30 +140,13 @@ const Contact = () => {
                         <label htmlFor="name" className="block text-sm font-medium mb-2">
                           Full Name *
                         </label>
-                        <Input
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          required
-                          placeholder="John Doe"
-                          className="h-12"
-                        />
+                        <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="John Doe" className="h-12" />
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium mb-2">
                           Email Address *
                         </label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                          placeholder="john@example.com"
-                          className="h-12"
-                        />
+                        <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="john@example.com" className="h-12" />
                       </div>
                     </div>
 
@@ -165,29 +155,13 @@ const Contact = () => {
                         <label htmlFor="phone" className="block text-sm font-medium mb-2">
                           Phone Number
                         </label>
-                        <Input
-                          id="phone"
-                          name="phone"
-                          type="tel"
-                          value={formData.phone}
-                          onChange={handleChange}
-                          placeholder="+1 (555) 123-4567"
-                          className="h-12"
-                        />
+                        <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+1 (555) 123-4567" className="h-12" />
                       </div>
                       <div>
                         <label htmlFor="subject" className="block text-sm font-medium mb-2">
                           Subject *
                         </label>
-                        <Input
-                          id="subject"
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
-                          required
-                          placeholder="Project Inquiry"
-                          className="h-12"
-                        />
+                        <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} required placeholder="Project Inquiry" className="h-12" />
                       </div>
                     </div>
 
@@ -195,16 +169,7 @@ const Contact = () => {
                       <label htmlFor="message" className="block text-sm font-medium mb-2">
                         Message *
                       </label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        placeholder="Tell us about your project..."
-                        rows={8}
-                        className="resize-none"
-                      />
+                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required placeholder="Tell us about your project..." rows={8} className="resize-none" />
                     </div>
 
                     <Button type="submit" size="lg" className="w-full gradient-primary text-primary-foreground text-lg">
@@ -220,8 +185,6 @@ const Contact = () => {
 
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
