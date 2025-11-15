@@ -41,7 +41,7 @@ const Index = () => {
   ];
 
   const stats = [
-    { value: "500+", label: "Projects Completed" },
+    { value: "62+", label: "Projects Completed" },
     { value: "98%", label: "Client Satisfaction" },
     { value: "50+", label: "Team Members" },
     { value: "15+", label: "Years Experience" },
