@@ -9,7 +9,7 @@ const Navigation = () => {
 
   const navLinks = [
     { to: "/", label: "Home" },
-    { to: "/about", label: "ABOUT" },
+    { to: "/about", label: "About" },
     { to: "/services", label: "Services" },
     { to: "/why-choose-us", label: "Why Us" },
     { to: "/contact", label: "Contact" },
@@ -39,7 +39,10 @@ const Navigation = () => {
                 {link.label}
               </NavLink>
             ))}
-            <Button asChild className="ml-6 bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider px-8 py-6">
+            <Button
+              asChild
+              className="ml-6 bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider px-8 py-6"
+            >
               <Link to="/contact">Start Project</Link>
             </Button>
           </div>
@@ -70,7 +73,10 @@ const Navigation = () => {
                   {link.label}
                 </NavLink>
               ))}
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider py-6 mt-4">
+              <Button
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider py-6 mt-4"
+              >
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   Start Project
                 </Link>
