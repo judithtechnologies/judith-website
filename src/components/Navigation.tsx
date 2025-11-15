@@ -21,7 +21,7 @@ const Navigation = () => {
     to: "/contact",
     label: "Contact"
   }];
-  return <nav className="fixed top-0 w-full bg-background/98 backdrop-blur-sm z-50">
+  return <nav className="fixed top-0 w-full bg-background z-50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-24">
           <Link to="/" className="flex items-center space-x-3">
@@ -33,7 +33,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
-            {navLinks.map(link => <NavLink key={link.to} to={link.to} end={link.to === "/"} className="px-6 py-3 text-foreground hover:text-primary transition-smooth font-semibold text-sm uppercase tracking-wider" activeClassName="text-primary">
+            {navLinks.map(link => <NavLink key={link.to} to={link.to} end={link.to === "/"} className="px-6 py-3 text-foreground hover:text-primary transition-smooth font-semibold text-sm uppercase tracking-wider border-b-2 border-transparent" activeClassName="text-primary border-primary">
                 {link.label}
               </NavLink>)}
             <Button asChild className="ml-6 bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider px-8 py-6">
@@ -50,7 +50,7 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && <div className="md:hidden py-6 border-t border-border">
             <div className="flex flex-col space-y-3">
-              {navLinks.map(link => <NavLink key={link.to} to={link.to} end={link.to === "/"} className="px-4 py-4 text-foreground hover:text-primary transition-smooth font-bold uppercase tracking-wider" activeClassName="text-primary" onClick={() => setIsOpen(false)}>
+              {navLinks.map(link => <NavLink key={link.to} to={link.to} end={link.to === "/"} className="px-4 py-4 text-foreground hover:text-primary transition-smooth font-bold uppercase tracking-wider border-b-2 border-transparent" activeClassName="text-primary border-primary" onClick={() => setIsOpen(false)}>
                   {link.label}
                 </NavLink>)}
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider py-6 mt-4">
