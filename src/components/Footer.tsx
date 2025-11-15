@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-display font-bold text-xl">JT</span>
               </div>
-              <span className="font-display font-bold text-lg">Judith Technologies    </span>
+              <span className="font-display font-bold text-lg">Judith Technologies</span>
             </div>
             <p className="text-muted-foreground mb-4">
               Leading the future of digital innovation with cutting-edge web and mobile solutions.
@@ -81,7 +81,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-muted-foreground">
                 <MapPin size={20} className="mt-0.5 flex-shrink-0 text-primary" />
-                <span>123 Tech Street, Innovation City, IC 12345</span>
+                <span>502, Everest Block, Ameerpet, Hyderabad, IND</span>
               </li>
               <li className="flex items-center space-x-3 text-muted-foreground">
                 <Phone size={20} className="flex-shrink-0 text-primary" />
