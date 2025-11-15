@@ -16,7 +16,7 @@ const Footer = () => {
               Leading the future of digital innovation with cutting-edge web and mobile solutions.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="w-10 h-10 rounded-lg bg-background hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-smooth">
+              <a href="https://www.linkedin.com/company/judithtechnologies" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-background hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-smooth">
                 <Linkedin size={20} />
               </a>
             </div>
