@@ -25,8 +25,8 @@ const Navigation = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-24">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center border-2 border-primary">
-              <span className="text-primary-foreground font-logo font-bold text-2xl">JT</span>
+            <div className="w-12 h-12 bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-display font-black text-2xl">JT</span>
             </div>
             <span className="font-display font-black text-2xl tracking-tight">JUDITH TECH  </span>
           </Link>
