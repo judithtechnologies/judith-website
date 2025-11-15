@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Code, Smartphone, Home, Users, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
+import { Code, Smartphone, Home, Database, Users, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -50,18 +50,18 @@ const Services = () => {
       technologies: ["MQTT", "AWS IoT", "Azure IoT", "Arduino", "Raspberry Pi", "LoRaWAN"],
     },
     {
-      icon: Users,
-      title: "Recruitment",
-      description: "Find and hire top talent with our comprehensive recruitment solutions.",
+      icon: Database,
+      title: "Big Data",
+      description: "Transform massive datasets into actionable insights and business intelligence.",
       features: [
-        "Technical Talent Sourcing",
-        "Candidate Screening & Assessment",
-        "Interview Coordination",
-        "Employer Branding",
-        "Recruitment Process Optimization",
-        "Talent Pool Management",
+        "Data Warehousing Solutions",
+        "Real-time Data Processing",
+        "Predictive Analytics",
+        "Data Visualization Dashboards",
+        "Machine Learning Integration",
+        "ETL Pipeline Development",
       ],
-      technologies: ["LinkedIn", "Indeed", "Greenhouse", "Workday", "ATS Systems", "HireVue"],
+      technologies: ["Hadoop", "Spark", "Kafka", "Snowflake", "Tableau", "Power BI"],
     },
     {
       icon: TrendingUp,
@@ -76,6 +76,20 @@ const Services = () => {
         "Community Management",
       ],
       technologies: ["Facebook Ads", "Instagram", "LinkedIn", "Twitter", "TikTok", "Google Analytics"],
+    },
+    {
+      icon: Users,
+      title: "Recruitment",
+      description: "Find and hire top talent with our comprehensive recruitment solutions.",
+      features: [
+        "Technical Talent Sourcing",
+        "Candidate Screening & Assessment",
+        "Interview Coordination",
+        "Employer Branding",
+        "Recruitment Process Optimization",
+        "Talent Pool Management",
+      ],
+      technologies: ["LinkedIn", "Indeed", "Greenhouse", "Workday", "ATS Systems", "HireVue"],
     },
   ];
 
