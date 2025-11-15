@@ -16,63 +16,63 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 shadow-soft">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-xl">JT</span>
+    <nav className="fixed top-0 w-full bg-background/98 backdrop-blur-sm z-50">
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="flex items-center justify-between h-24">
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-display font-black text-2xl">JT</span>
             </div>
-            <span className="font-display font-bold text-xl">Judith Technologies</span>
+            <span className="font-display font-black text-2xl tracking-tight">JUDITH</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-2">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 end={link.to === "/"}
-                className="px-4 py-2 rounded-lg text-foreground hover:text-primary hover:bg-secondary/50 transition-smooth font-medium"
-                activeClassName="text-primary bg-secondary"
+                className="px-6 py-3 text-foreground hover:text-primary transition-smooth font-semibold text-sm uppercase tracking-wider"
+                activeClassName="text-primary"
               >
                 {link.label}
               </NavLink>
             ))}
-            <Button asChild className="ml-4 gradient-primary text-primary-foreground">
-              <Link to="/contact">Get Started</Link>
+            <Button asChild className="ml-6 bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider px-8 py-6">
+              <Link to="/contact">Start Project</Link>
             </Button>
           </div>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-secondary transition-smooth"
+            className="md:hidden p-2 hover:text-primary transition-smooth"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col space-y-2">
+          <div className="md:hidden py-6 border-t border-border">
+            <div className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.to}
                   to={link.to}
                   end={link.to === "/"}
-                  className="px-4 py-3 rounded-lg text-foreground hover:text-primary hover:bg-secondary/50 transition-smooth font-medium"
-                  activeClassName="text-primary bg-secondary"
+                  className="px-4 py-4 text-foreground hover:text-primary transition-smooth font-bold uppercase tracking-wider"
+                  activeClassName="text-primary"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </NavLink>
               ))}
-              <Button asChild className="gradient-primary text-primary-foreground mt-2">
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase tracking-wider py-6 mt-4">
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
-                  Get Started
+                  Start Project
                 </Link>
               </Button>
             </div>

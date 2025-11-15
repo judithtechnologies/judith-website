@@ -47,42 +47,39 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 gradient-hero opacity-50"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        ></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight">
-              Transforming Ideas Into
-              <span className="gradient-primary bg-clip-text text-transparent"> Digital Excellence</span>
+      <section className="relative pt-40 pb-32 overflow-hidden min-h-[90vh] flex items-center">
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
+          <div className="max-w-6xl">
+            <h1 className="mb-8 leading-none">
+              WE CREATE
+              <br />
+              <span className="text-primary">DIGITAL</span>
+              <br />
+              EXPERIENCES
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              We craft innovative web and mobile solutions that drive growth and exceed expectations.
+            <p className="text-2xl md:text-3xl text-muted-foreground mb-12 max-w-3xl font-medium">
+              FOR AMBITIOUS BRANDS
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="gradient-primary text-primary-foreground text-lg">
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base uppercase tracking-wider font-bold px-10 py-7">
                 <Link to="/contact">
-                  Start Your Project <ArrowRight className="ml-2" size={20} />
+                  Start Project <ArrowRight className="ml-2" size={20} />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg border-2">
-                <Link to="/services">Explore Services</Link>
+              <Button asChild size="lg" variant="outline" className="text-base uppercase tracking-wider font-bold px-10 py-7 border-2 border-foreground hover:bg-foreground hover:text-background">
+                <Link to="/services">View Services</Link>
               </Button>
             </div>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-32 max-w-6xl">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold gradient-primary bg-clip-text text-transparent mb-2">
+              <div key={index}>
+                <div className="text-5xl md:text-6xl font-black mb-2 text-primary">
                   {stat.value}
                 </div>
-                <div className="text-muted-foreground font-medium">{stat.label}</div>
+                <div className="text-muted-foreground font-medium uppercase tracking-wider text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -90,91 +87,108 @@ const Index = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Our Services</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive solutions tailored to elevate your digital presence
+      <section className="py-32 bg-secondary">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="mb-20">
+            <h2 className="mb-6">
+              OUR
+              <br />
+              <span className="text-primary">SERVICES</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-medium">
+              COMPREHENSIVE SOLUTIONS FOR YOUR DIGITAL SUCCESS
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-medium transition-smooth border-2 hover:border-primary/50">
-                <CardContent className="p-6">
-                  <div className="w-14 h-14 rounded-lg gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth">
-                    <service.icon className="text-primary-foreground" size={28} />
-                  </div>
-                  <h3 className="text-xl font-display font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+              <Card key={index} className="border-2 border-border hover:border-primary transition-smooth group bg-background">
+                <CardContent className="p-8">
+                  <service.icon className="w-16 h-16 mb-6 text-primary" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <Link to="/services" className="inline-flex items-center text-primary font-bold uppercase text-sm tracking-wider hover:gap-3 transition-all">
+                    Learn More <ArrowRight size={16} className="ml-2" />
+                  </Link>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline" className="border-2">
-              <Link to="/services">
-                View All Services <ArrowRight className="ml-2" size={20} />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Preview */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-32">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Why Choose Judith Technologies?</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                We combine expertise, innovation, and dedication to deliver exceptional results
-              </p>
+            <div className="mb-20">
+              <h2 className="mb-6">
+                WHY CHOOSE
+                <br />
+                <span className="text-primary">JUDITH</span>
+              </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { icon: Zap, title: "Fast Delivery", description: "Efficient timelines without compromising quality" },
-                { icon: Shield, title: "Secure Solutions", description: "Enterprise-grade security in every project" },
-                { icon: Users, title: "Expert Team", description: "Seasoned professionals with proven track records" },
-                { icon: CheckCircle, title: "Quality Assured", description: "Rigorous testing and quality control" },
-              ].map((item, index) => (
-                <div key={index} className="text-center p-6 rounded-lg hover:bg-secondary/50 transition-smooth">
-                  <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="text-primary-foreground" size={32} />
-                  </div>
-                  <h3 className="text-lg font-display font-semibold mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="space-y-8">
+                <div className="border-l-4 border-primary pl-8 py-4">
+                  <Zap className="w-12 h-12 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-black mb-3 uppercase tracking-tight">Cutting-Edge Technology</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We leverage the latest technologies to build future-proof solutions.
+                  </p>
                 </div>
-              ))}
-            </div>
 
-            <div className="text-center mt-12">
-              <Button asChild size="lg" className="gradient-primary text-primary-foreground">
-                <Link to="/why-choose-us">
-                  Learn More About Us <ArrowRight className="ml-2" size={20} />
-                </Link>
-              </Button>
+                <div className="border-l-4 border-primary pl-8 py-4">
+                  <Shield className="w-12 h-12 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-black mb-3 uppercase tracking-tight">Proven Track Record</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    500+ successful projects with 98% client satisfaction rate.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                <div className="border-l-4 border-primary pl-8 py-4">
+                  <Users className="w-12 h-12 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-black mb-3 uppercase tracking-tight">Expert Team</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    50+ talented professionals dedicated to your success.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-8 py-4">
+                  <CheckCircle className="w-12 h-12 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-black mb-3 uppercase tracking-tight">End-to-End Support</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    From concept to launch and beyond, we're with you every step.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-primary">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
-              Ready to Start Your Project?
+      <section className="py-32 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-5xl">
+            <h2 className="mb-8 text-primary-foreground">
+              READY TO
+              <br />
+              START YOUR
+              <br />
+              PROJECT?
             </h2>
-            <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's bring your vision to life with cutting-edge technology and expert craftsmanship.
+            <p className="text-2xl md:text-3xl mb-12 font-medium opacity-90">
+              LET'S CREATE SOMETHING EXTRAORDINARY TOGETHER
             </p>
-            <Button asChild size="lg" variant="secondary" className="text-lg">
+            <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90 text-base uppercase tracking-wider font-bold px-10 py-7">
               <Link to="/contact">
-                Get In Touch <ArrowRight className="ml-2" size={20} />
+                Get in Touch <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
           </div>
