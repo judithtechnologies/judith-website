@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Code, Smartphone, Home, Users, TrendingUp, CheckCircle, Zap, Shield } from "lucide-react";
+import { ArrowRight, Code, Smartphone, Home, Database, Users, TrendingUp, CheckCircle, Zap, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-background.jpg";
 
 const Index = () => {
@@ -24,14 +24,19 @@ const Index = () => {
       description: "Connected IoT solutions that bridge the physical and digital worlds.",
     },
     {
-      icon: Users,
-      title: "Recruitment",
-      description: "Find and hire top talent with comprehensive recruitment solutions.",
+      icon: Database,
+      title: "Big Data",
+      description: "Transform massive datasets into actionable business intelligence.",
     },
     {
       icon: TrendingUp,
       title: "Social Media Marketing",
       description: "Strategic campaigns that amplify your brand presence and engagement.",
+    },
+    {
+      icon: Users,
+      title: "Recruitment",
+      description: "Find and hire top talent with comprehensive recruitment solutions.",
     },
   ];
 
