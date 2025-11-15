@@ -15,7 +15,7 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    subject: "",
+    website: "",
     message: ""
   });
   const handleSubmit = (e: React.FormEvent) => {
@@ -28,7 +28,7 @@ const Contact = () => {
       name: "",
       email: "",
       phone: "",
-      subject: "",
+      website: "",
       message: ""
     });
   };
@@ -146,15 +146,15 @@ const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                          Phone Number
+                          Phone Number *
                         </label>
-                        <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+1 (555) 123-4567" className="h-12" />
+                        <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} required placeholder="+91 1234567890" className="h-12" />
                       </div>
                       <div>
-                        <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                          Subject *
+                        <label htmlFor="website" className="block text-sm font-medium mb-2">
+                          Business Website
                         </label>
-                        <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} required placeholder="Project Inquiry" className="h-12" />
+                        <Input id="website" name="website" type="url" value={formData.website} onChange={handleChange} placeholder="https://yourbusiness.com" className="h-12" />
                       </div>
                     </div>
 
