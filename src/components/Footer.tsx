@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-secondary border-t border-border">
+  return <footer className="bg-secondary border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -12,7 +10,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-display font-bold text-xl">JT</span>
               </div>
-              <span className="font-display font-bold text-lg">Judith Technologies</span>
+              <span className="font-display font-bold text-lg">Judith Technologies    </span>
             </div>
             <p className="text-muted-foreground mb-4">
               Leading the future of digital innovation with cutting-edge web and mobile solutions.
@@ -44,7 +42,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/about" className="text-muted-foreground hover:text-primary transition-smooth">
-                  About Us
+                  About 
                 </Link>
               </li>
               <li>
@@ -54,7 +52,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/why-choose-us" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Why Choose Us
+                  Why Us
                 </Link>
               </li>
               <li>
@@ -87,11 +85,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-muted-foreground">
                 <Phone size={20} className="flex-shrink-0 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 6300369782</span>
               </li>
               <li className="flex items-center space-x-3 text-muted-foreground">
                 <Mail size={20} className="flex-shrink-0 text-primary" />
-                <span>info@judithtechnologies.com</span>
+                <span>info@judithtech.com</span>
               </li>
             </ul>
           </div>
@@ -101,8 +99,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Judith Technologies. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
