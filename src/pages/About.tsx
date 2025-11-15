@@ -2,40 +2,32 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Award, Users, Lightbulb, Heart } from "lucide-react";
-
 const About = () => {
-  const values = [
-    {
-      icon: Lightbulb,
-      title: "Innovation",
-      description: "We constantly explore cutting-edge technologies to deliver forward-thinking solutions.",
-    },
-    {
-      icon: Users,
-      title: "Collaboration",
-      description: "We work closely with clients as partners, ensuring their vision becomes reality.",
-    },
-    {
-      icon: Award,
-      title: "Excellence",
-      description: "We maintain the highest standards in every project, from concept to delivery.",
-    },
-    {
-      icon: Heart,
-      title: "Integrity",
-      description: "We build lasting relationships through transparency, honesty, and accountability.",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const values = [{
+    icon: Lightbulb,
+    title: "Innovation",
+    description: "We constantly explore cutting-edge technologies to deliver forward-thinking solutions."
+  }, {
+    icon: Users,
+    title: "Collaboration",
+    description: "We work closely with clients as partners, ensuring their vision becomes reality."
+  }, {
+    icon: Award,
+    title: "Excellence",
+    description: "We maintain the highest standards in every project, from concept to delivery."
+  }, {
+    icon: Heart,
+    title: "Integrity",
+    description: "We build lasting relationships through transparency, honesty, and accountability."
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">About Judith Technologies</h1>
+            <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">ABOUT JUDITH TECH  </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               A pioneering force in digital innovation, dedicated to transforming businesses through technology.
             </p>
@@ -104,8 +96,7 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {values.map((value, index) => (
-                <Card key={index} className="border-2 hover:shadow-medium transition-smooth">
+              {values.map((value, index) => <Card key={index} className="border-2 hover:shadow-medium transition-smooth">
                   <CardContent className="p-8">
                     <div className="flex items-start space-x-4">
                       <div className="w-14 h-14 rounded-lg gradient-primary flex items-center justify-center flex-shrink-0">
@@ -117,8 +108,7 @@ const About = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -160,8 +150,6 @@ const About = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
