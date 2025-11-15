@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-display font-bold text-xl">JT</span>
               </div>
-              <span className="font-display font-bold text-lg">Judith Technologies</span>
+              <span className="font-display font-bold text-lg">Judith Tech  </span>
             </div>
             <p className="text-muted-foreground mb-4">
               Leading the future of digital innovation with cutting-edge web and mobile solutions.
