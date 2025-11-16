@@ -150,7 +150,7 @@ const Index = () => {
                   <Shield className="w-12 h-12 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-2xl font-black mb-3 uppercase tracking-tight">Proven Track Record</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    500+ successful projects with 98% client satisfaction rate.
+                    65+ successful projects with 98% client satisfaction rate.
                   </p>
                 </div>
               </div>
