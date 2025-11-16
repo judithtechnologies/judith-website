@@ -5,50 +5,46 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Code, Smartphone, Home, Database, Users, TrendingUp, CheckCircle, Zap, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-background.jpg";
-
 const Index = () => {
-  const services = [
-    {
-      icon: Code,
-      title: "Web Design & Development",
-      description: "Custom, responsive websites that captivate and convert your audience.",
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile solutions for iOS and Android.",
-    },
-    {
-      icon: Home,
-      title: "IoT Applications",
-      description: "Connected IoT solutions that bridge the physical and digital worlds.",
-    },
-    {
-      icon: Database,
-      title: "Big Data",
-      description: "Transform massive datasets into actionable business intelligence.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Social Media Marketing",
-      description: "Strategic campaigns that amplify your brand presence and engagement.",
-    },
-    {
-      icon: Users,
-      title: "Recruitment",
-      description: "Find and hire top talent with comprehensive recruitment solutions.",
-    },
-  ];
-
-  const stats = [
-    { value: "65+", label: "Projects Completed" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "30+", label: "Team Members" },
-    { value: "15+", label: "Years Experience" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const services = [{
+    icon: Code,
+    title: "Web Design & Development",
+    description: "Custom, responsive websites that captivate and convert your audience."
+  }, {
+    icon: Smartphone,
+    title: "Mobile App Development",
+    description: "Native and cross-platform mobile solutions for iOS and Android."
+  }, {
+    icon: Home,
+    title: "IoT Applications",
+    description: "Connected IoT solutions that bridge the physical and digital worlds."
+  }, {
+    icon: Database,
+    title: "Big Data",
+    description: "Transform massive datasets into actionable business intelligence."
+  }, {
+    icon: TrendingUp,
+    title: "Social Media Marketing",
+    description: "Strategic campaigns that amplify your brand presence and engagement."
+  }, {
+    icon: Users,
+    title: "Recruitment",
+    description: "Find and hire top talent with comprehensive recruitment solutions."
+  }];
+  const stats = [{
+    value: "65+",
+    label: "Projects Completed"
+  }, {
+    value: "98%",
+    label: "Client Satisfaction"
+  }, {
+    value: "30+",
+    label: "Team Members"
+  }, {
+    value: "15+",
+    label: "Years Experience"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -79,14 +75,12 @@ const Index = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-32 max-w-6xl">
-            {stats.map((stat, index) => (
-              <div key={index}>
+            {stats.map((stat, index) => <div key={index}>
                 <div className="text-5xl md:text-6xl font-black mb-2 text-primary">
                   {stat.value}
                 </div>
                 <div className="text-muted-foreground font-medium uppercase tracking-wider text-sm">{stat.label}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -106,8 +100,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="border-2 border-border hover:border-primary transition-smooth group bg-background">
+            {services.map((service, index) => <Card key={index} className="border-2 border-border hover:border-primary transition-smooth group bg-background">
                 <CardContent className="p-8">
                   <service.icon className="w-16 h-16 mb-6 text-primary" strokeWidth={1.5} />
                   <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">{service.title}</h3>
@@ -118,8 +111,7 @@ const Index = () => {
                     Learn More <ArrowRight size={16} className="ml-2" />
                   </Link>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -160,7 +152,7 @@ const Index = () => {
                   <Users className="w-12 h-12 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-2xl font-black mb-3 uppercase tracking-tight">Expert Team</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    50+ talented professionals dedicated to your success.
+                    30+ talented professionals dedicated to your success.
                   </p>
                 </div>
 
@@ -201,8 +193,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
